@@ -5,7 +5,7 @@ This is data management activity of New York University's `Data Management and A
 ## Table of Contents
 
 - [File Directory](#file-directory)
-- [Inspecting nation_subset data](#inspecting-nation-subset-data)
+- [Inspecting nation_subset data](#inspecting-nation_subset-data)
   - [Create an ER Diagram by inspecting tables](#create-an-er-diagram-by-inspecting-tables)
 - [Inspecting CAERS dataset](#inspecting-caers-dataset)
   - [Examine a data set and create a normalized data model to store the data](#examine-a-data-set-and-create-a-normalized-data-model-to-store-the-data)
@@ -16,13 +16,13 @@ This is data management activity of New York University's `Data Management and A
 ```bash
 ├── data
 │   ├── nation_subset.sql
-│		├── CAERS-Quarterly--20220930-EXCEL.csv
+│   ├── CAERS-Quarterly--20220930-EXCEL.csv
 ├── src
-│ 	├── nation_subset_analysis.sql					#Analyze nation_subset data
-│   ├── create_staging_t.sql								#Create table for CAERS events
-│   ├── caers_event_data_import.sql					#Add actual data to the tables
-│   ├── staging_table_analysis.sql					#Analyze caers event data for normalization
-│   ├── normalization_t_ddl.sql							#Create table to implement the data model
+│   ├── nation_subset_analysis.sql		#Analyze nation_subset data
+│   ├── create_staging_t.sql			#Create table for CAERS events
+│   ├── caers_event_data_import.sql		#Add actual data to the tables
+│   ├── staging_table_analysis.sql		#Analyze caers event data for normalization
+│   ├── normalization_t_ddl.sql			#Create table to implement the data model
 └── README.md
 ```
 

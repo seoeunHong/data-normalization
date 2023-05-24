@@ -4,18 +4,14 @@ This is data management activity of New York University's `Data Management and A
 
 ## Table of Contents
 
----
-
-- File Directory
-- Inspecting nation_subset data
-  - Create an ER Diagram by inspecting tables
-- 
+- [File Directory](#file-directory)
+- [Inspecting nation_subset data](#inspecting-nation-subset-data)
+  - [Create an ER Diagram by inspecting tables](#create-an-er-diagram-by-inspecting-tables)
+- [Inspecting CAERS dataset](#inspecting-caers-dataset)
+  - [Examine a data set and create a normalized data model to store the data](#examine-a-data-set-and-create-a-normalized-data-model-to-store-the-data)
+  - [Data normalization and ER diagram](#data-normalization-and-er-diagram)
 
 ## File Directory
-
-------
-
-
 
 ```bash
 ├── data
@@ -32,11 +28,11 @@ This is data management activity of New York University's `Data Management and A
 
 ## Inspecting nation_subset data
 
-----
-
 ### Create an ER Diagram by inspecting tables
 
 Create ER Diagram based on tables in SQL file - `nation_subset.sql`.
+
+![nation_subset_er_diagram](https://github.com/seoeunHong/data-normalization/assets/75988952/1be6f893-0c2c-466e-9211-01ca7bdc6514)
 
 `nation_subset.sql` contains information about countries (such as population, languages, etc.). This data is sourced from a site for another relational database (https://www.mariadbtutorial.com/), so the import statements have been adapted to postgres. The data is contained in multiple tables.
 
@@ -73,8 +69,6 @@ Create ER Diagram based on tables in SQL file - `nation_subset.sql`.
 - It has a one-to-many relationship with `countries`. This relationship exists because of a foreign key `region_id` in `countries` that references `regions(region_id)`
 
 ## Inspecting CAERS dataset
-
----
 
 ### Examine a data set and create a normalized data model to store the data
 
